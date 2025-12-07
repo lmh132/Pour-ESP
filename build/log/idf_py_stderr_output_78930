@@ -1,0 +1,5 @@
+[0;33m--- esp-idf-monitor 1.8.0 on /dev/cu.usbmodem2101 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x400490d9: [0;33musb_uart_device_rx_one_char[0m[0m in [0;32mROM[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 3695cd09821f49ce1420311244f9042d6292f51898bdd7240e4cbe393db3fbd7[0m
+[0m

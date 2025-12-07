@@ -1,0 +1,592 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f64
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (18) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Nov  4 2025 16:59:48[0m
+[0;32mI (18) boot: Multicore bootloader[0m
+[0;32mI (21) boot: chip revision: v0.2[0m
+[0;32mI (25) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (30) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=26e88h (159368) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=00036eb0 vaddr=3fc9a900 size=049b8h ( 18872) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0003b870 vaddr=40374000 size=047a8h ( 18344) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a0d7ch (658812) map[0m
+[0;32mI (252) esp_image: segment 4: paddr=000e0da4 vaddr=403787a8 size=12050h ( 73808) load[0m
+[0;32mI (277) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (278) boot: Disabling RNG early entropy source...[0m
+[0;32mI (290) cpu_start: Multicore app[0m
+[0;32mI (299) cpu_start: Pro cpu start user code[0m
+[0;32mI (299) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (299) app_init: Application information:[0m
+[0;32mI (302) app_init: Project name:     pour[0m
+[0;32mI (306) app_init: App version:      a35c7b7-dirty[0m
+[0;32mI (312) app_init: Compile time:     Nov  4 2025 16:59:43[0m
+[0;32mI (318) app_init: ELF file SHA256:  962a7d599...[0m
+[0;32mI (323) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (328) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (332) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (337) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (342) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (350) heap_init: At 3FCA35A8 len 00046168 (280 KiB): RAM[0m
+[0;32mI (356) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (362) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (368) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (375) spi_flash: detected chip: gd[0m
+[0;32mI (378) spi_flash: flash io: dio[0m
+[0;33mW (382) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (396) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (406) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (413) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (421) main_task: Started on CPU0[0m
+[0;32mI (431) main_task: Calling app_main()[0m
+[0;32mI (451) MAIN: Connecting to WiFi...[0m
+[0;32mI (461) pp: pp rom version: e7ae62f[0m
+[0;32mI (461) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (471) wifi:wifi driver task: 3fcad91c, prio:23, stack:6656, core=0[0m
+[0;32mI (481) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (481) wifi:wifi certification version: v7.0[0m
+[0;32mI (481) wifi:config NVS flash: enabled[0m
+[0;32mI (481) wifi:config nano formating: disabled[0m
+[0;32mI (481) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (491) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (491) wifi:Init management short buffer num: 32[0m
+[0;32mI (501) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (501) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (501) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (511) wifi:Init static rx buffer num: 10[0m
+[0;32mI (511) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (521) wifi_init: rx ba win: 6[0m
+[0;32mI (521) wifi_init: accept mbox: 6[0m
+[0;32mI (521) wifi_init: tcpip mbox: 32[0m
+[0;32mI (531) wifi_init: udp mbox: 6[0m
+[0;32mI (531) wifi_init: tcp mbox: 6[0m
+[0;32mI (541) wifi_init: tcp tx win: 5760[0m
+[0;32mI (541) wifi_init: tcp rx win: 5760[0m
+[0;32mI (541) wifi_init: tcp mss: 1440[0m
+[0;32mI (551) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (551) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (561) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (601) wifi:mode : sta (7c:2c:67:99:fc:54)[0m
+[0;32mI (601) wifi:enable tsf[0m
+[0;32mI (611) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (611) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (611) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (621) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (621) wifi:connected with DukeVisitor, aid = 1, channel 6, BW20, bssid = 6c:b2:ae:37:85:03[0m
+[0;32mI (621) wifi:security: Open Auth, phy: bgn, rssi: -81[0m
+[0;32mI (631) wifi:pm start, type: 1[0m
+
+[0;32mI (631) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (641) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (651) wifi:<ba-add>idx:0 (ifx:0, 6c:b2:ae:37:85:03), tid:0, ssn:0, winSize:64[0m
+[0;32mI (861) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1651) esp_netif_handlers: sta ip: 172.28.243.189, mask: 255.255.0.0, gw: 172.28.0.1[0m
+[0;32mI (1651) MAIN: WiFi connected![0m
+[0;32mI (1651) MAIN: Init PCA9685...[0m
+[0;32mI (1661) MAIN: Calling /mix endpoint...[0m
+[0;32mI (1661) MAIN: Calling /mix endpoint...[0m
+[0;32mI (1791) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (1801) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (1801) MAIN: Parsed status=0[0m
+[0;33mW (1801) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (11801) MAIN: Calling /mix endpoint...[0m
+[0;32mI (11801) MAIN: Calling /mix endpoint...[0m
+[0;32mI (11921) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (11921) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (11921) MAIN: Parsed status=0[0m
+[0;33mW (11931) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (21931) MAIN: Calling /mix endpoint...[0m
+[0;32mI (21931) MAIN: Calling /mix endpoint...[0m
+[0;32mI (22581) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (22581) MAIN: Response (len=12): '{"status":2}'[0m
+[0;32mI (22581) MAIN: Parsed status=2[0m
+[0;33mW (22581) MAIN: Skipping: status != 1 (got 2)[0m
+[0;32mI (32581) MAIN: Calling /mix endpoint...[0m
+[0;32mI (32581) MAIN: Calling /mix endpoint...[0m
+[0;32mI (32701) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (32701) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (32701) MAIN: Parsed status=0[0m
+[0;33mW (32701) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (41921) wifi:<ba-add>idx:1 (ifx:0, 6c:b2:ae:37:85:03), tid:3, ssn:0, winSize:64[0m
+[0;32mI (42701) MAIN: Calling /mix endpoint...[0m
+[0;32mI (42701) MAIN: Calling /mix endpoint...[0m
+[0;32mI (42811) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (42811) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (42811) MAIN: Parsed status=0[0m
+[0;33mW (42811) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (52821) MAIN: Calling /mix endpoint...[0m
+[0;32mI (52821) MAIN: Calling /mix endpoint...[0m
+[0;32mI (52931) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (52931) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (52941) MAIN: Parsed status=0[0m
+[0;33mW (52941) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (62941) MAIN: Calling /mix endpoint...[0m
+[0;32mI (62941) MAIN: Calling /mix endpoint...[0m
+[0;32mI (63061) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (63061) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (63061) MAIN: Parsed status=0[0m
+[0;33mW (63061) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (73071) MAIN: Calling /mix endpoint...[0m
+[0;32mI (73071) MAIN: Calling /mix endpoint...[0m
+[0;32mI (73181) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (73191) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (73191) MAIN: Parsed status=0[0m
+[0;33mW (73191) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (83191) MAIN: Calling /mix endpoint...[0m
+[0;32mI (83191) MAIN: Calling /mix endpoint...[0m
+[0;32mI (83311) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (83311) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (83311) MAIN: Parsed status=0[0m
+[0;33mW (83311) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (93321) MAIN: Calling /mix endpoint...[0m
+[0;32mI (93321) MAIN: Calling /mix endpoint...[0m
+[0;32mI (93431) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (93431) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (93441) MAIN: Parsed status=0[0m
+[0;33mW (93441) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (103441) MAIN: Calling /mix endpoint...[0m
+[0;32mI (103441) MAIN: Calling /mix endpoint...[0m
+[0;32mI (103551) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (103551) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (103551) MAIN: Parsed status=0[0m
+[0;33mW (103551) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (113561) MAIN: Calling /mix endpoint...[0m
+[0;32mI (113561) MAIN: Calling /mix endpoint...[0m
+[0;32mI (113681) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (113681) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (113681) MAIN: Parsed status=0[0m
+[0;33mW (113681) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (123691) MAIN: Calling /mix endpoint...[0m
+[0;32mI (123691) MAIN: Calling /mix endpoint...[0m
+[0;32mI (125791) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (125801) MAIN: Response (len=12): '{"status":2}'[0m
+[0;32mI (125801) MAIN: Parsed status=2[0m
+[0;33mW (125801) MAIN: Skipping: status != 1 (got 2)[0m
+[0;32mI (135801) MAIN: Calling /mix endpoint...[0m
+[0;32mI (135801) MAIN: Calling /mix endpoint...[0m
+[0;32mI (136341) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (136341) MAIN: Response (len=12): '{"status":2}'[0m
+[0;32mI (136341) MAIN: Parsed status=2[0m
+[0;33mW (136351) MAIN: Skipping: status != 1 (got 2)[0m
+[0;32mI (146351) MAIN: Calling /mix endpoint...[0m
+[0;32mI (146351) MAIN: Calling /mix endpoint...[0m
+[0;32mI (146461) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (146461) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (146471) MAIN: Parsed status=0[0m
+[0;33mW (146471) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (156471) MAIN: Calling /mix endpoint...[0m
+[0;32mI (156471) MAIN: Calling /mix endpoint...[0m
+[0;32mI (156591) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (156591) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (156591) MAIN: Parsed status=0[0m
+[0;33mW (156591) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (166601) MAIN: Calling /mix endpoint...[0m
+[0;32mI (166601) MAIN: Calling /mix endpoint...[0m
+[0;32mI (166721) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (166721) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (166731) MAIN: Parsed status=0[0m
+[0;33mW (166731) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (176731) MAIN: Calling /mix endpoint...[0m
+[0;32mI (176731) MAIN: Calling /mix endpoint...[0m
+[0;32mI (176841) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (176851) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (176851) MAIN: Parsed status=0[0m
+[0;33mW (176851) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (186851) MAIN: Calling /mix endpoint...[0m
+[0;32mI (186851) MAIN: Calling /mix endpoint...[0m
+[0;32mI (186971) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (186971) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (186971) MAIN: Parsed status=0[0m
+[0;33mW (186971) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (196981) MAIN: Calling /mix endpoint...[0m
+[0;32mI (196981) MAIN: Calling /mix endpoint...[0m
+[0;32mI (197101) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (197101) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (197101) MAIN: Parsed status=0[0m
+[0;33mW (197101) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (207111) MAIN: Calling /mix endpoint...[0m
+[0;32mI (207111) MAIN: Calling /mix endpoint...[0m
+[0;32mI (207221) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (207221) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (207221) MAIN: Parsed status=0[0m
+[0;33mW (207221) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (217231) MAIN: Calling /mix endpoint...[0m
+[0;32mI (217231) MAIN: Calling /mix endpoint...[0m
+[0;32mI (217341) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (217341) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (217341) MAIN: Parsed status=0[0m
+[0;33mW (217341) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (227351) MAIN: Calling /mix endpoint...[0m
+[0;32mI (227351) MAIN: Calling /mix endpoint...[0m
+[0;32mI (227471) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (227471) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (227471) MAIN: Parsed status=0[0m
+[0;33mW (227481) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (237481) MAIN: Calling /mix endpoint...[0m
+[0;32mI (237481) MAIN: Calling /mix endpoint...[0m
+[0;32mI (237591) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (237591) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (237591) MAIN: Parsed status=0[0m
+[0;33mW (237591) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (247601) MAIN: Calling /mix endpoint...[0m
+[0;32mI (247601) MAIN: Calling /mix endpoint...[0m
+[0;32mI (247721) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (247721) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (247721) MAIN: Parsed status=0[0m
+[0;33mW (247721) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (257731) MAIN: Calling /mix endpoint...[0m
+[0;32mI (257731) MAIN: Calling /mix endpoint...[0m
+[0;32mI (257841) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (257841) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (257841) MAIN: Parsed status=0[0m
+[0;33mW (257841) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (267851) MAIN: Calling /mix endpoint...[0m
+[0;32mI (267851) MAIN: Calling /mix endpoint...[0m
+[0;32mI (267961) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (267961) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (267961) MAIN: Parsed status=0[0m
+[0;33mW (267961) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (277971) MAIN: Calling /mix endpoint...[0m
+[0;32mI (277971) MAIN: Calling /mix endpoint...[0m
+[0;32mI (278081) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (278081) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (278081) MAIN: Parsed status=0[0m
+[0;33mW (278081) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (288091) MAIN: Calling /mix endpoint...[0m
+[0;32mI (288091) MAIN: Calling /mix endpoint...[0m
+[0;32mI (288201) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (288201) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (288201) MAIN: Parsed status=0[0m
+[0;33mW (288201) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (298211) MAIN: Calling /mix endpoint...[0m
+[0;32mI (298211) MAIN: Calling /mix endpoint...[0m
+[0;32mI (298331) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (298331) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (298331) MAIN: Parsed status=0[0m
+[0;33mW (298331) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (308341) MAIN: Calling /mix endpoint...[0m
+[0;32mI (308341) MAIN: Calling /mix endpoint...[0m
+[0;32mI (308451) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (308451) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (308451) MAIN: Parsed status=0[0m
+[0;33mW (308451) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (318461) MAIN: Calling /mix endpoint...[0m
+[0;32mI (318461) MAIN: Calling /mix endpoint...[0m
+[0;32mI (318571) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (318571) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (318571) MAIN: Parsed status=0[0m
+[0;33mW (318571) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (328581) MAIN: Calling /mix endpoint...[0m
+[0;32mI (328581) MAIN: Calling /mix endpoint...[0m
+[0;32mI (328691) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (328691) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (328691) MAIN: Parsed status=0[0m
+[0;33mW (328691) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (338701) MAIN: Calling /mix endpoint...[0m
+[0;32mI (338701) MAIN: Calling /mix endpoint...[0m
+[0;32mI (338821) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (338821) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (338821) MAIN: Parsed status=0[0m
+[0;33mW (338821) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (348821) MAIN: Calling /mix endpoint...[0m
+[0;32mI (348821) MAIN: Calling /mix endpoint...[0m
+[0;32mI (348931) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (348931) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (348931) MAIN: Parsed status=0[0m
+[0;33mW (348941) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (358941) MAIN: Calling /mix endpoint...[0m
+[0;32mI (358941) MAIN: Calling /mix endpoint...[0m
+[0;32mI (359051) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (359051) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (359061) MAIN: Parsed status=0[0m
+[0;33mW (359061) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (369061) MAIN: Calling /mix endpoint...[0m
+[0;32mI (369061) MAIN: Calling /mix endpoint...[0m
+[0;32mI (369171) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (369171) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (369171) MAIN: Parsed status=0[0m
+[0;33mW (369171) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (379181) MAIN: Calling /mix endpoint...[0m
+[0;32mI (379181) MAIN: Calling /mix endpoint...[0m
+[0;32mI (379291) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (379291) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (379291) MAIN: Parsed status=0[0m
+[0;33mW (379291) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (389301) MAIN: Calling /mix endpoint...[0m
+[0;32mI (389301) MAIN: Calling /mix endpoint...[0m
+[0;32mI (389411) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (389411) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (389411) MAIN: Parsed status=0[0m
+[0;33mW (389411) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (399421) MAIN: Calling /mix endpoint...[0m
+[0;32mI (399421) MAIN: Calling /mix endpoint...[0m
+[0;32mI (399531) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (399531) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (399531) MAIN: Parsed status=0[0m
+[0;33mW (399531) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (409541) MAIN: Calling /mix endpoint...[0m
+[0;32mI (409541) MAIN: Calling /mix endpoint...[0m
+[0;32mI (409651) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (409661) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (409661) MAIN: Parsed status=0[0m
+[0;33mW (409661) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (419671) MAIN: Calling /mix endpoint...[0m
+[0;32mI (419671) MAIN: Calling /mix endpoint...[0m
+[0;32mI (419781) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (419791) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (419791) MAIN: Parsed status=0[0m
+[0;33mW (419791) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (429791) MAIN: Calling /mix endpoint...[0m
+[0;32mI (429791) MAIN: Calling /mix endpoint...[0m
+[0;32mI (429911) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (429911) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (429911) MAIN: Parsed status=0[0m
+[0;33mW (429911) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (439921) MAIN: Calling /mix endpoint...[0m
+[0;32mI (439921) MAIN: Calling /mix endpoint...[0m
+[0;32mI (440041) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (440041) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (440041) MAIN: Parsed status=0[0m
+[0;33mW (440041) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (450041) MAIN: Calling /mix endpoint...[0m
+[0;32mI (450041) MAIN: Calling /mix endpoint...[0m
+[0;32mI (450151) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (450161) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (450161) MAIN: Parsed status=0[0m
+[0;33mW (450161) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (460161) MAIN: Calling /mix endpoint...[0m
+[0;32mI (460161) MAIN: Calling /mix endpoint...[0m
+[0;32mI (460271) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (460281) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (460281) MAIN: Parsed status=0[0m
+[0;33mW (460281) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (470281) MAIN: Calling /mix endpoint...[0m
+[0;32mI (470281) MAIN: Calling /mix endpoint...[0m
+[0;32mI (470391) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (470401) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (470401) MAIN: Parsed status=0[0m
+[0;33mW (470401) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (480401) MAIN: Calling /mix endpoint...[0m
+[0;32mI (480401) MAIN: Calling /mix endpoint...[0m
+[0;32mI (480511) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (480511) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (480511) MAIN: Parsed status=0[0m
+[0;33mW (480521) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (490521) MAIN: Calling /mix endpoint...[0m
+[0;32mI (490521) MAIN: Calling /mix endpoint...[0m
+[0;31mE (490551) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (490551) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (490561) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (490561) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (500571) MAIN: Calling /mix endpoint...[0m
+[0;32mI (500571) MAIN: Calling /mix endpoint...[0m
+[0;31mE (500601) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (500601) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (500611) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (500611) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (510621) MAIN: Calling /mix endpoint...[0m
+[0;32mI (510621) MAIN: Calling /mix endpoint...[0m
+[0;31mE (510651) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (510651) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (510661) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (510661) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (520671) MAIN: Calling /mix endpoint...[0m
+[0;32mI (520671) MAIN: Calling /mix endpoint...[0m
+[0;31mE (520701) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (520711) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (520711) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (520711) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (530721) MAIN: Calling /mix endpoint...[0m
+[0;32mI (530721) MAIN: Calling /mix endpoint...[0m
+[0;31mE (530751) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (530751) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (530761) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (530761) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (540771) MAIN: Calling /mix endpoint...[0m
+[0;32mI (540771) MAIN: Calling /mix endpoint...[0m
+[0;31mE (540801) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (540801) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (540811) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (540811) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (550821) MAIN: Calling /mix endpoint...[0m
+[0;32mI (550821) MAIN: Calling /mix endpoint...[0m
+[0;31mE (550851) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (550851) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (550861) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (550861) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (560871) MAIN: Calling /mix endpoint...[0m
+[0;32mI (560871) MAIN: Calling /mix endpoint...[0m
+[0;31mE (560901) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (560911) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (560911) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (560911) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (570921) MAIN: Calling /mix endpoint...[0m
+[0;32mI (570921) MAIN: Calling /mix endpoint...[0m
+[0;31mE (570951) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (570951) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (570961) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (570961) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (580971) MAIN: Calling /mix endpoint...[0m
+[0;32mI (580971) MAIN: Calling /mix endpoint...[0m
+[0;31mE (581001) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (581001) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (581011) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (581011) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (591021) MAIN: Calling /mix endpoint...[0m
+[0;32mI (591021) MAIN: Calling /mix endpoint...[0m
+[0;31mE (591051) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (591061) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (591061) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (591061) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (601071) MAIN: Calling /mix endpoint...[0m
+[0;32mI (601071) MAIN: Calling /mix endpoint...[0m
+[0;31mE (601101) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (601101) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (601111) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (601111) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (611121) MAIN: Calling /mix endpoint...[0m
+[0;32mI (611121) MAIN: Calling /mix endpoint...[0m
+[0;31mE (611151) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (611151) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (611161) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (611161) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (621171) MAIN: Calling /mix endpoint...[0m
+[0;32mI (621171) MAIN: Calling /mix endpoint...[0m
+[0;31mE (621211) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (621211) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (621211) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (621211) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (631221) MAIN: Calling /mix endpoint...[0m
+[0;32mI (631221) MAIN: Calling /mix endpoint...[0m
+[0;31mE (631251) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (631251) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (631261) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (631261) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (641271) MAIN: Calling /mix endpoint...[0m
+[0;32mI (641271) MAIN: Calling /mix endpoint...[0m
+[0;31mE (641301) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (641311) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (641311) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (641311) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (651321) MAIN: Calling /mix endpoint...[0m
+[0;32mI (651321) MAIN: Calling /mix endpoint...[0m
+[0;31mE (651361) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (651361) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (651361) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (651361) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (661371) MAIN: Calling /mix endpoint...[0m
+[0;32mI (661371) MAIN: Calling /mix endpoint...[0m
+[0;31mE (661411) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (661411) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (661411) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (661421) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (671421) MAIN: Calling /mix endpoint...[0m
+[0;32mI (671421) MAIN: Calling /mix endpoint...[0m
+[0;31mE (671451) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (671451) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (671461) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (671461) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (681471) MAIN: Calling /mix endpoint...[0m
+[0;32mI (681471) MAIN: Calling /mix endpoint...[0m
+[0;31mE (681501) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (681511) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (681511) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (681511) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (691521) MAIN: Calling /mix endpoint...[0m
+[0;32mI (691521) MAIN: Calling /mix endpoint...[0m
+[0;31mE (691551) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (691551) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (691561) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (691561) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (701571) MAIN: Calling /mix endpoint...[0m
+[0;32mI (701571) MAIN: Calling /mix endpoint...[0m
+[0;31mE (701601) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (701601) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (701611) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (701611) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (711621) MAIN: Calling /mix endpoint...[0m
+[0;32mI (711621) MAIN: Calling /mix endpoint...[0m
+[0;31mE (711651) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (711661) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (711661) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (711661) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (721671) MAIN: Calling /mix endpoint...[0m
+[0;32mI (721671) MAIN: Calling /mix endpoint...[0m
+[0;31mE (721701) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (721701) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721711) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (721711) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (731721) MAIN: Calling /mix endpoint...[0m
+[0;32mI (731721) MAIN: Calling /mix endpoint...[0m
+[0;31mE (731751) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (731761) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (731761) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (731761) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (741771) MAIN: Calling /mix endpoint...[0m
+[0;32mI (741771) MAIN: Calling /mix endpoint...[0m
+[0;31mE (741801) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (741801) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (741811) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (741811) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (751821) MAIN: Calling /mix endpoint...[0m
+[0;32mI (751821) MAIN: Calling /mix endpoint...[0m
+[0;31mE (751851) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (751851) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (751861) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (751861) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (761871) MAIN: Calling /mix endpoint...[0m
+[0;32mI (761871) MAIN: Calling /mix endpoint...[0m
+[0;31mE (761911) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (761911) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (761911) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (761921) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (771921) MAIN: Calling /mix endpoint...[0m
+[0;32mI (771921) MAIN: Calling /mix endpoint...[0m
+[0;31mE (771951) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (771951) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (771961) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (771961) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (781971) MAIN: Calling /mix endpoint...[0m
+[0;32mI (781971) MAIN: Calling /mix endpoint...[0m
+[0;31mE (782001) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (782001) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (782011) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (782011) MAIN: POST failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (792021) MAIN: Calling /mix endpoint...[0m
+[0;32mI (792021) MAIN: Calling /mix endpoint...[0m
+[0;32mI (792131) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (792131) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (792131) MAIN: Parsed status=0[0m
+[0;33mW (792131) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (802141) MAIN: Calling /mix endpoint...[0m
+[0;32mI (802141) MAIN: Calling /mix endpoint...[0m
+[0;33mW (812191) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (812191) MAIN: POST failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (822191) MAIN: Calling /mix endpoint...[0m
+[0;32mI (822191) MAIN: Calling /mix endpoint...[0m
+[0;32mI (822301) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (822301) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (822301) MAIN: Parsed status=0[0m
+[0;33mW (822301) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (832311) MAIN: Calling /mix endpoint...[0m
+[0;32mI (832311) MAIN: Calling /mix endpoint...[0m
+[0;32mI (832431) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (832431) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (832431) MAIN: Parsed status=0[0m
+[0;33mW (832431) MAIN: Skipping: status != 1 (got 0)[0m

@@ -1,0 +1,171 @@
+[0;32mI (278) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (278ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40049068
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (18) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Nov  4 2025 16:59:48[0m
+[0;32mI (18) boot: Multicore bootloader[0m
+[0;32mI (21) boot: chip revision: v0.2[0m
+[0;32mI (25) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (30) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=26e88h (159368) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=00036eb0 vaddr=3fc9a900 size=049b8h ( 18872) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0003b870 vaddr=40374000 size=047a8h ( 18344) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a0d7ch (658812) map[0m
+[0;32mI (252) esp_image: segment 4: paddr=000e0da4 vaddr=403787a8 size=12050h ( 73808) load[0m
+[0;32mI (277) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (278) boot: Disabling RNG early entropy source...[0m
+[0;32mI (290) cpu_start: Multicore app[0m
+[0;32mI (299) cpu_start: Pro cpu start user code[0m
+[0;32mI (299) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (299) app_init: Application information:[0m
+[0;32mI (302) app_init: Project name:     pour[0m
+[0;32mI (306) app_init: App version:      a35c7b7-dirty[0m
+[0;32mI (312) app_init: Compile time:     Nov  4 2025 16:59:43[0m
+[0;32mI (318) app_init: ELF file SHA256:  c5bb99871...[0m
+[0;32mI (323) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (328) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (332) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (337) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (342) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (350) heap_init: At 3FCA35A8 len 00046168 (280 KiB): RAM[0m
+[0;32mI (356) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (362) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (368) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (375) spi_flash: detected chip: gd[0m
+[0;32mI (378) spi_flash: flash io: dio[0m
+[0;33mW (382) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (396) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (406) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (413) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (420) main_task: Started on CPU0[0m
+[0;32mI (430) main_task: Calling app_main()[0m
+[0;32mI (450) MAIN: Connecting to WiFi...[0m
+[0;32mI (460) pp: pp rom version: e7ae62f[0m
+[0;32mI (460) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (470) wifi:wifi driver task: 3fcad91c, prio:23, stack:6656, core=0[0m
+[0;32mI (480) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (480) wifi:wifi certification version: v7.0[0m
+[0;32mI (480) wifi:config NVS flash: enabled[0m
+[0;32mI (480) wifi:config nano formating: disabled[0m
+[0;32mI (480) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (490) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (490) wifi:Init management short buffer num: 32[0m
+[0;32mI (500) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (500) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (500) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (510) wifi:Init static rx buffer num: 10[0m
+[0;32mI (510) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (520) wifi_init: rx ba win: 6[0m
+[0;32mI (520) wifi_init: accept mbox: 6[0m
+[0;32mI (520) wifi_init: tcpip mbox: 32[0m
+[0;32mI (530) wifi_init: udp mbox: 6[0m
+[0;32mI (530) wifi_init: tcp mbox: 6[0m
+[0;32mI (540) wifi_init: tcp tx win: 5760[0m
+[0;32mI (540) wifi_init: tcp rx win: 5760[0m
+[0;32mI (540) wifi_init: tcp mss: 1440[0m
+[0;32mI (550) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (550) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (560) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (600) wifi:mode : sta (7c:2c:67:99:fc:54)[0m
+[0;32mI (600) wifi:enable tsf[0m
+[0;32mI (610) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (610) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (610) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (620) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (620) wifi:connected with DukeVisitor, aid = 3, channel 1, BW20, bssid = 00:a3:8e:4e:36:83[0m
+[0;32mI (620) wifi:security: Open Auth, phy: bgn, rssi: -55[0m
+[0;32mI (630) wifi:pm start, type: 1[0m
+
+[0;32mI (630) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (640) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (650) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (650) wifi:<ba-add>idx:0 (ifx:0, 00:a3:8e:4e:36:83), tid:0, ssn:1, winSize:64[0m
+[0;32mI (1660) esp_netif_handlers: sta ip: 172.28.243.189, mask: 255.255.0.0, gw: 172.28.0.1[0m
+[0;32mI (1660) MAIN: WiFi connected![0m
+[0;32mI (1660) MAIN: Init PCA9685...[0m
+[0;32mI (1670) MAIN: Calling /mix endpoint...[0m
+[0;32mI (1670) MAIN: Calling /mix endpoint...[0m
+[0;32mI (1780) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (1790) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (1790) MAIN: Parsed status=0[0m
+[0;33mW (1790) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (11790) MAIN: Calling /mix endpoint...[0m
+[0;32mI (11790) MAIN: Calling /mix endpoint...[0m
+[0;32mI (11900) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (11900) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (11900) MAIN: Parsed status=0[0m
+[0;33mW (11900) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (21910) MAIN: Calling /mix endpoint...[0m
+[0;32mI (21910) MAIN: Calling /mix endpoint...[0m
+[0;32mI (47020) MAIN: HTTP status=200, content_len=50[0m
+[0;32mI (47020) MAIN: Response (len=50): '{"status":1,"recipe":[{"port":1,"volume_ml":473}]}'[0m
+[0;32mI (47020) MAIN: Parsed status=1[0m
+[0;32mI (47020) MAIN: Recipe item: port=1, volume_ml=473[0m
+[0;32mI (59350) MAIN: Calling /mix endpoint...[0m
+[0;32mI (59350) MAIN: Calling /mix endpoint...[0m
+[0;32mI (59460) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (59460) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (59460) MAIN: Parsed status=0[0m
+[0;33mW (59460) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (69460) MAIN: Calling /mix endpoint...[0m
+[0;32mI (69460) MAIN: Calling /mix endpoint...[0m
+[0;32mI (79680) MAIN: HTTP status=200, content_len=50[0m
+[0;32mI (79680) MAIN: Response (len=50): '{"status":1,"recipe":[{"port":1,"volume_ml":473}]}'[0m
+[0;32mI (79690) MAIN: Parsed status=1[0m
+[0;32mI (79690) MAIN: Recipe item: port=1, volume_ml=473[0m
+[0;32mI (89310) wifi:<ba-add>idx:1 (ifx:0, 00:a3:8e:4e:36:83), tid:3, ssn:0, winSize:64[0m
+[0;32mI (92020) MAIN: Calling /mix endpoint...[0m
+[0;32mI (92020) MAIN: Calling /mix endpoint...[0m
+[0;32mI (92130) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (92130) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (92130) MAIN: Parsed status=0[0m
+[0;33mW (92130) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (102130) MAIN: Calling /mix endpoint...[0m
+[0;32mI (102130) MAIN: Calling /mix endpoint...[0m
+[0;32mI (114090) MAIN: HTTP status=200, content_len=103[0m
+[0;32mI (114090) MAIN: Response (len=103): '{"status":1,"recipe":[{"port":1,"volume_ml":177},{"port":2,"volume_ml":59},{"port":0,"volume_ml":237}]}'[0m
+[0;32mI (114100) MAIN: Parsed status=1[0m
+[0;32mI (114100) MAIN: Recipe item: port=1, volume_ml=177[0m
+[0;32mI (116130) MAIN: Recipe item: port=2, volume_ml=59[0m
+[0;32mI (118030) MAIN: Recipe item: port=0, volume_ml=237[0m
+[0;32mI (130110) MAIN: Calling /mix endpoint...[0m
+[0;32mI (130110) MAIN: Calling /mix endpoint...[0m
+[0;32mI (130220) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (130220) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (130220) MAIN: Parsed status=0[0m
+[0;33mW (130220) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (140230) MAIN: Calling /mix endpoint...[0m
+[0;32mI (140230) MAIN: Calling /mix endpoint...[0m
+[0;32mI (140350) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (140350) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (140350) MAIN: Parsed status=0[0m
+[0;33mW (140350) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (150350) MAIN: Calling /mix endpoint...[0m
+[0;32mI (150350) MAIN: Calling /mix endpoint...[0m
+[0;32mI (150460) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (150460) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (150460) MAIN: Parsed status=0[0m
+[0;33mW (150470) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (160470) MAIN: Calling /mix endpoint...[0m
+[0;32mI (160470) MAIN: Calling /mix endpoint...[0m
+[0;32mI (160580) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (160580) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (160590) MAIN: Parsed status=0[0m
+[0;33mW (160590) MAIN: Skipping: status != 1 (got 0)[0m

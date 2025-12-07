@@ -1,0 +1,53 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/leohu/.espressif/python_env/idf5.3_py3.13_env/lib/python3.13/site-packages/esptool/__main__.py", line 9, in <module>
+    esptool._main()
+    ~~~~~~~~~~~~~^^
+  File "/Users/leohu/.espressif/python_env/idf5.3_py3.13_env/lib/python3.13/site-packages/esptool/__init__.py", line 1365, in _main
+    main()
+    ~~~~^^
+  File "/Users/leohu/.espressif/python_env/idf5.3_py3.13_env/lib/python3.13/site-packages/esptool/__init__.py", line 1069, in main
+    operation_func(esp, args)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/leohu/.espressif/python_env/idf5.3_py3.13_env/lib/python3.13/site-packages/esptool/cmds.py", line 667, in write_flash
+    esp.flash_defl_block(block, seq, timeout=timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/leohu/.espressif/python_env/idf5.3_py3.13_env/lib/python3.13/site-packages/esptool/loader.py", line 127, in inner
+    return func(*args, **kwargs)
+  File "/Users/leohu/.espressif/python_env/idf5.3_py3.13_env/lib/python3.13/site-packages/esptool/loader.py", line 1315, in flash_defl_block
+    self.check_command(
+    ~~~~~~~~~~~~~~~~~~^
+        "write compressed data to flash after seq %d" % seq,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        timeout=timeout,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/leohu/.espressif/python_env/idf5.3_py3.13_env/lib/python3.13/site-packages/esptool/loader.py", line 547, in check_command
+    val, data = self.command(op, data, chk, timeout=timeout)
+                ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/leohu/.espressif/python_env/idf5.3_py3.13_env/lib/python3.13/site-packages/esptool/loader.py", line 521, in command
+    self._port.timeout = saved_timeout
+    ^^^^^^^^^^^^^^^^^^
+  File "/Users/leohu/.espressif/python_env/idf5.3_py3.13_env/lib/python3.13/site-packages/serial/serialutil.py", line 372, in timeout
+    self._reconfigure_port()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/leohu/.espressif/python_env/idf5.3_py3.13_env/lib/python3.13/site-packages/serial/serialposix.py", line 517, in _reconfigure_port
+    termios.tcsetattr(
+    ~~~~~~~~~~~~~~~~~^
+        self.fd,
+        ^^^^^^^^
+        termios.TCSANOW,
+        ^^^^^^^^^^^^^^^^
+        [iflag, oflag, cflag, lflag, ispeed, ospeed, cc])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+termios.error: (6, 'Device not configured')
+CMake Error at run_serial_tool.cmake:66 (message):
+  
+  /Users/leohu/.espressif/python_env/idf5.3_py3.13_env/bin/python;;/Users/leohu/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3
+  failed.
+
+
+

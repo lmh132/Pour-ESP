@@ -1,0 +1,114 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048e22
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (18) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Nov  4 2025 16:59:48[0m
+[0;32mI (18) boot: Multicore bootloader[0m
+[0;32mI (21) boot: chip revision: v0.2[0m
+[0;32mI (25) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (30) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=23efch (147196) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00033f24 vaddr=3fc9a900 size=049a8h ( 18856) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=000388d4 vaddr=40374000 size=07744h ( 30532) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8f820h (587808) map[0m
+[0;32mI (237) esp_image: segment 4: paddr=000cf848 vaddr=4037b744 size=0f184h ( 61828) load[0m
+[0;32mI (260) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (260) boot: Disabling RNG early entropy source...[0m
+[0;32mI (272) cpu_start: Multicore app[0m
+[0;32mI (281) cpu_start: Pro cpu start user code[0m
+[0;32mI (281) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (281) app_init: Application information:[0m
+[0;32mI (284) app_init: Project name:     pour[0m
+[0;32mI (289) app_init: App version:      a35c7b7-dirty[0m
+[0;32mI (294) app_init: Compile time:     Nov  4 2025 16:59:43[0m
+[0;32mI (300) app_init: ELF file SHA256:  983922577...[0m
+[0;32mI (305) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (310) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (315) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (320) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (325) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (332) heap_init: At 3FCA2EA8 len 00046868 (282 KiB): RAM[0m
+[0;32mI (338) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (344) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (350) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (358) spi_flash: detected chip: gd[0m
+[0;32mI (361) spi_flash: flash io: dio[0m
+[0;33mW (365) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (378) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (389) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (396) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (403) main_task: Started on CPU0[0m
+[0;32mI (413) main_task: Calling app_main()[0m
+[0;32mI (433) MAIN: Connecting to Wi-Fi...[0m
+[0;32mI (443) pp: pp rom version: e7ae62f[0m
+[0;32mI (443) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (453) wifi:wifi driver task: 3fcad1c4, prio:23, stack:6656, core=0[0m
+[0;32mI (463) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (463) wifi:wifi certification version: v7.0[0m
+[0;32mI (463) wifi:config NVS flash: enabled[0m
+[0;32mI (463) wifi:config nano formating: disabled[0m
+[0;32mI (463) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (473) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (473) wifi:Init management short buffer num: 32[0m
+[0;32mI (483) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (483) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (483) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (493) wifi:Init static rx buffer num: 10[0m
+[0;32mI (493) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (503) wifi_init: rx ba win: 6[0m
+[0;32mI (503) wifi_init: accept mbox: 6[0m
+[0;32mI (503) wifi_init: tcpip mbox: 32[0m
+[0;32mI (513) wifi_init: udp mbox: 6[0m
+[0;32mI (513) wifi_init: tcp mbox: 6[0m
+[0;32mI (523) wifi_init: tcp tx win: 5760[0m
+[0;32mI (523) wifi_init: tcp rx win: 5760[0m
+[0;32mI (523) wifi_init: tcp mss: 1440[0m
+[0;32mI (533) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (533) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (543) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (583) wifi:mode : sta (7c:2c:67:99:fc:54)[0m
+[0;32mI (583) wifi:enable tsf[0m
+[0;32mI (583) WIFI: Connecting to SSID: DukeVisitor...[0m
+[0;32mI (593) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (593) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (603) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (603) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (603) wifi:connected with DukeVisitor, aid = 2, channel 1, BW20, bssid = 6c:b2:ae:50:07:43[0m
+[0;32mI (613) wifi:security: Open Auth, phy: bgn, rssi: -81[0m
+[0;32mI (613) wifi:pm start, type: 1[0m
+
+[0;32mI (613) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (623) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (633) wifi:<ba-add>idx:0 (ifx:0, 6c:b2:ae:50:07:43), tid:0, ssn:0, winSize:64[0m
+[0;32mI (803) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2643) esp_netif_handlers: sta ip: 172.28.243.189, mask: 255.255.0.0, gw: 172.28.0.1[0m
+[0;32mI (2643) WIFI: Got IP: 172.28.243.189[0m
+[0;32mI (2643) WIFI: Wi-Fi connected successfully![0m
+[0;32mI (2643) WIFI: ESP32 IP Address: 172.28.243.189[0m
+[0;32mI (2653) MAIN: Initializing PCA9685...[0m
+[0;32mI (2663) MAIN: Starting HTTP server...[0m
+[0;32mI (2663) WIFI: Starting HTTP server...[0m
+[0;32mI (2663) WIFI: HTTP server started, /servo endpoint ready[0m
+[0;32mI (2673) MAIN: Server ready, listening for POST /servo requests[0m
+[0;32mI (9423) WIFI: Received 5 servo commands[0m
+[0;32mI (9423) WIFI: Servo 2 -> Volume 0.50[0m
+[0;32mI (11323) WIFI: Servo 0 -> Volume 0.50[0m
+[0;32mI (13223) WIFI: Servo 1 -> Volume 1.00[0m
+[0;32mI (15623) WIFI: Servo 0 -> Volume 0.50[0m
+[0;32mI (17523) WIFI: Servo 1 -> Volume 0.50[0m

@@ -1,0 +1,386 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048d00
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (18) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Nov  4 2025 16:59:48[0m
+[0;32mI (18) boot: Multicore bootloader[0m
+[0;32mI (21) boot: chip revision: v0.2[0m
+[0;32mI (25) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (30) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (45) boot: Partition Table:[0m
+[0;32mI (48) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=26e88h (159368) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=00036eb0 vaddr=3fc9a900 size=049b8h ( 18872) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0003b870 vaddr=40374000 size=047a8h ( 18344) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a0d60h (658784) map[0m
+[0;32mI (252) esp_image: segment 4: paddr=000e0d88 vaddr=403787a8 size=12050h ( 73808) load[0m
+[0;32mI (277) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (278) boot: Disabling RNG early entropy source...[0m
+[0;32mI (290) cpu_start: Multicore app[0m
+[0;32mI (299) cpu_start: Pro cpu start user code[0m
+[0;32mI (299) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (299) app_init: Application information:[0m
+[0;32mI (302) app_init: Project name:     pour[0m
+[0;32mI (306) app_init: App version:      a35c7b7-dirty[0m
+[0;32mI (312) app_init: Compile time:     Nov  4 2025 16:59:43[0m
+[0;32mI (318) app_init: ELF file SHA256:  4563852de...[0m
+[0;32mI (323) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (328) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (332) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (337) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (342) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (350) heap_init: At 3FCA35A8 len 00046168 (280 KiB): RAM[0m
+[0;32mI (356) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (362) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (368) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (375) spi_flash: detected chip: gd[0m
+[0;32mI (378) spi_flash: flash io: dio[0m
+[0;33mW (382) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (396) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (406) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (413) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (421) main_task: Started on CPU0[0m
+[0;32mI (431) main_task: Calling app_main()[0m
+[0;32mI (451) MAIN: Connecting to WiFi...[0m
+[0;32mI (461) pp: pp rom version: e7ae62f[0m
+[0;32mI (461) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (471) wifi:wifi driver task: 3fcad91c, prio:23, stack:6656, core=0[0m
+[0;32mI (481) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (481) wifi:wifi certification version: v7.0[0m
+[0;32mI (481) wifi:config NVS flash: enabled[0m
+[0;32mI (481) wifi:config nano formating: disabled[0m
+[0;32mI (481) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (491) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (491) wifi:Init management short buffer num: 32[0m
+[0;32mI (501) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (501) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (501) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (511) wifi:Init static rx buffer num: 10[0m
+[0;32mI (511) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (521) wifi_init: rx ba win: 6[0m
+[0;32mI (521) wifi_init: accept mbox: 6[0m
+[0;32mI (521) wifi_init: tcpip mbox: 32[0m
+[0;32mI (531) wifi_init: udp mbox: 6[0m
+[0;32mI (531) wifi_init: tcp mbox: 6[0m
+[0;32mI (541) wifi_init: tcp tx win: 5760[0m
+[0;32mI (541) wifi_init: tcp rx win: 5760[0m
+[0;32mI (541) wifi_init: tcp mss: 1440[0m
+[0;32mI (551) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (551) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (561) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (601) wifi:mode : sta (7c:2c:67:99:fc:54)[0m
+[0;32mI (601) wifi:enable tsf[0m
+[0;32mI (611) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (611) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (611) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (621) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (621) wifi:connected with DukeVisitor, aid = 1, channel 1, BW20, bssid = 00:5d:73:22:9e:a5[0m
+[0;32mI (621) wifi:security: Open Auth, phy: bgn, rssi: -52[0m
+[0;32mI (631) wifi:pm start, type: 1[0m
+
+[0;32mI (631) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (641) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (651) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (651) wifi:<ba-add>idx:0 (ifx:0, 00:5d:73:22:9e:a5), tid:0, ssn:1, winSize:64[0m
+[0;32mI (1661) esp_netif_handlers: sta ip: 172.28.243.189, mask: 255.255.0.0, gw: 172.28.0.1[0m
+[0;32mI (1661) MAIN: WiFi connected![0m
+[0;32mI (1661) MAIN: Init PCA9685...[0m
+[0;32mI (1661) MAIN: Calling /mix endpoint...[0m
+[0;32mI (1781) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (1791) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (1791) MAIN: Parsed status=0[0m
+[0;33mW (1791) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (6791) MAIN: Calling /mix endpoint...[0m
+[0;32mI (11801) wifi:<ba-add>idx:1 (ifx:0, 00:5d:73:22:9e:a5), tid:3, ssn:0, winSize:64[0m
+[0;32mI (15391) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (15391) MAIN: Response (len=12): '{"status":2}'[0m
+[0;32mI (15391) MAIN: Parsed status=2[0m
+[0;33mW (15391) MAIN: Skipping: status != 1 (got 2)[0m
+[0;32mI (20401) MAIN: Calling /mix endpoint...[0m
+[0;32mI (20511) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (20521) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (20521) MAIN: Parsed status=0[0m
+[0;33mW (20521) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (25521) MAIN: Calling /mix endpoint...[0m
+[0;32mI (25631) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (25631) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (25631) MAIN: Parsed status=0[0m
+[0;33mW (25631) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (30641) MAIN: Calling /mix endpoint...[0m
+[0;32mI (30751) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (30761) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (30761) MAIN: Parsed status=0[0m
+[0;33mW (30761) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (35761) MAIN: Calling /mix endpoint...[0m
+[0;32mI (35871) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (35871) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (35871) MAIN: Parsed status=0[0m
+[0;33mW (35871) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (40871) MAIN: Calling /mix endpoint...[0m
+[0;32mI (40981) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (40981) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (40991) MAIN: Parsed status=0[0m
+[0;33mW (40991) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (45991) MAIN: Calling /mix endpoint...[0m
+[0;32mI (46101) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (46101) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (46101) MAIN: Parsed status=0[0m
+[0;33mW (46101) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (51111) MAIN: Calling /mix endpoint...[0m
+[0;32mI (51221) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (51221) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (51221) MAIN: Parsed status=0[0m
+[0;33mW (51221) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (56231) MAIN: Calling /mix endpoint...[0m
+[0;32mI (56341) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (56341) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (56341) MAIN: Parsed status=0[0m
+[0;33mW (56351) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (61351) MAIN: Calling /mix endpoint...[0m
+[0;32mI (61461) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (61461) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (61461) MAIN: Parsed status=0[0m
+[0;33mW (61461) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (66461) MAIN: Calling /mix endpoint...[0m
+[0;32mI (66571) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (66571) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (66571) MAIN: Parsed status=0[0m
+[0;33mW (66571) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (71581) MAIN: Calling /mix endpoint...[0m
+[0;32mI (71691) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (71691) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (71691) MAIN: Parsed status=0[0m
+[0;33mW (71691) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (76691) MAIN: Calling /mix endpoint...[0m
+[0;32mI (76801) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (76801) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (76801) MAIN: Parsed status=0[0m
+[0;33mW (76801) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (81811) MAIN: Calling /mix endpoint...[0m
+[0;32mI (81921) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (81921) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (81921) MAIN: Parsed status=0[0m
+[0;33mW (81921) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (86931) MAIN: Calling /mix endpoint...[0m
+[0;32mI (87041) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (87041) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (87041) MAIN: Parsed status=0[0m
+[0;33mW (87041) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (92051) MAIN: Calling /mix endpoint...[0m
+[0;32mI (92161) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (92161) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (92161) MAIN: Parsed status=0[0m
+[0;33mW (92171) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (97171) MAIN: Calling /mix endpoint...[0m
+[0;32mI (97281) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (97281) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (97281) MAIN: Parsed status=0[0m
+[0;33mW (97281) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (102291) MAIN: Calling /mix endpoint...[0m
+[0;32mI (102401) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (102401) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (102401) MAIN: Parsed status=0[0m
+[0;33mW (102401) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (107411) MAIN: Calling /mix endpoint...[0m
+[0;32mI (107521) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (107521) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (107521) MAIN: Parsed status=0[0m
+[0;33mW (107531) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (112531) MAIN: Calling /mix endpoint...[0m
+[0;32mI (112651) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (112651) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (112651) MAIN: Parsed status=0[0m
+[0;33mW (112651) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (117651) MAIN: Calling /mix endpoint...[0m
+[0;32mI (117771) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (117771) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (117771) MAIN: Parsed status=0[0m
+[0;33mW (117781) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (122781) MAIN: Calling /mix endpoint...[0m
+[0;32mI (122881) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (122891) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (122891) MAIN: Parsed status=0[0m
+[0;33mW (122891) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (127891) MAIN: Calling /mix endpoint...[0m
+[0;32mI (128001) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (128001) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (128001) MAIN: Parsed status=0[0m
+[0;33mW (128001) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (133011) MAIN: Calling /mix endpoint...[0m
+[0;32mI (133121) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (133121) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (133121) MAIN: Parsed status=0[0m
+[0;33mW (133121) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (138131) MAIN: Calling /mix endpoint...[0m
+[0;32mI (138241) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (138241) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (138241) MAIN: Parsed status=0[0m
+[0;33mW (138251) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (143251) MAIN: Calling /mix endpoint...[0m
+[0;32mI (143361) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (143361) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (143361) MAIN: Parsed status=0[0m
+[0;33mW (143361) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (148371) MAIN: Calling /mix endpoint...[0m
+[0;32mI (148481) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (148481) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (148481) MAIN: Parsed status=0[0m
+[0;33mW (148481) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (153491) MAIN: Calling /mix endpoint...[0m
+[0;32mI (153601) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (153601) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (153601) MAIN: Parsed status=0[0m
+[0;33mW (153601) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (158611) MAIN: Calling /mix endpoint...[0m
+[0;32mI (158721) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (158721) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (158721) MAIN: Parsed status=0[0m
+[0;33mW (158721) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (163731) MAIN: Calling /mix endpoint...[0m
+[0;32mI (163841) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (163851) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (163851) MAIN: Parsed status=0[0m
+[0;33mW (163851) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (168851) MAIN: Calling /mix endpoint...[0m
+[0;32mI (168961) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (168961) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (168961) MAIN: Parsed status=0[0m
+[0;33mW (168961) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (173971) MAIN: Calling /mix endpoint...[0m
+[0;32mI (174081) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (174081) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (174081) MAIN: Parsed status=0[0m
+[0;33mW (174081) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (179091) MAIN: Calling /mix endpoint...[0m
+[0;32mI (179201) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (179201) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (179201) MAIN: Parsed status=0[0m
+[0;33mW (179211) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (184211) MAIN: Calling /mix endpoint...[0m
+[0;32mI (184321) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (184331) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (184331) MAIN: Parsed status=0[0m
+[0;33mW (184331) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (189331) MAIN: Calling /mix endpoint...[0m
+[0;32mI (189441) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (189441) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (189441) MAIN: Parsed status=0[0m
+[0;33mW (189441) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (194451) MAIN: Calling /mix endpoint...[0m
+[0;32mI (194561) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (194561) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (194561) MAIN: Parsed status=0[0m
+[0;33mW (194561) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (199571) MAIN: Calling /mix endpoint...[0m
+[0;32mI (199681) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (199681) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (199681) MAIN: Parsed status=0[0m
+[0;33mW (199681) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (204691) MAIN: Calling /mix endpoint...[0m
+[0;32mI (204801) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (204801) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (204811) MAIN: Parsed status=0[0m
+[0;33mW (204811) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (209811) MAIN: Calling /mix endpoint...[0m
+[0;32mI (209921) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (209921) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (209921) MAIN: Parsed status=0[0m
+[0;33mW (209921) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (214931) MAIN: Calling /mix endpoint...[0m
+[0;32mI (215041) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (215041) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (215041) MAIN: Parsed status=0[0m
+[0;33mW (215041) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (220051) MAIN: Calling /mix endpoint...[0m
+[0;32mI (220161) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (220161) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (220161) MAIN: Parsed status=0[0m
+[0;33mW (220171) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (225171) MAIN: Calling /mix endpoint...[0m
+[0;32mI (225281) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (225281) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (225281) MAIN: Parsed status=0[0m
+[0;33mW (225281) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (230291) MAIN: Calling /mix endpoint...[0m
+[0;32mI (230401) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (230401) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (230401) MAIN: Parsed status=0[0m
+[0;33mW (230401) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (235411) MAIN: Calling /mix endpoint...[0m
+[0;32mI (235521) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (235521) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (235521) MAIN: Parsed status=0[0m
+[0;33mW (235521) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (240531) MAIN: Calling /mix endpoint...[0m
+[0;32mI (240641) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (240651) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (240651) MAIN: Parsed status=0[0m
+[0;33mW (240651) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (245651) MAIN: Calling /mix endpoint...[0m
+[0;32mI (245761) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (245761) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (245761) MAIN: Parsed status=0[0m
+[0;33mW (245761) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (250771) MAIN: Calling /mix endpoint...[0m
+[0;32mI (250881) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (250881) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (250881) MAIN: Parsed status=0[0m
+[0;33mW (250881) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (255891) MAIN: Calling /mix endpoint...[0m
+[0;32mI (256001) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (256001) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (256001) MAIN: Parsed status=0[0m
+[0;33mW (256001) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (261011) MAIN: Calling /mix endpoint...[0m
+[0;32mI (261121) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (261121) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (261121) MAIN: Parsed status=0[0m
+[0;33mW (261131) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (266131) MAIN: Calling /mix endpoint...[0m
+[0;32mI (266241) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (266241) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (266241) MAIN: Parsed status=0[0m
+[0;33mW (266241) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (271251) MAIN: Calling /mix endpoint...[0m
+[0;32mI (271361) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (271361) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (271361) MAIN: Parsed status=0[0m
+[0;33mW (271371) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (276371) MAIN: Calling /mix endpoint...[0m
+[0;32mI (276481) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (276491) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (276491) MAIN: Parsed status=0[0m
+[0;33mW (276491) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (281491) MAIN: Calling /mix endpoint...[0m
+[0;32mI (281601) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (281601) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (281601) MAIN: Parsed status=0[0m
+[0;33mW (281601) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (286611) MAIN: Calling /mix endpoint...[0m
+[0;32mI (286721) MAIN: HTTP status=200, content_len=12[0m
+[0;32mI (286721) MAIN: Response (len=12): '{"status":0}'[0m
+[0;32mI (286721) MAIN: Parsed status=0[0m
+[0;33mW (286721) MAIN: Skipping: status != 1 (got 0)[0m
+[0;32mI (291731) MAIN: Calling /mix endpoint...[0m
+[0;32mI (301601) MAIN: HTTP status=200, content_len=153[0m
+[0;32mI (301601) MAIN: Response (len=153): '{"status":1,"recipe":[{"port":0,"volume_ml":30},{"port":1,"volume_ml":30},{"port":2,"volume_ml":30},{"port":3,"volume_ml":30},{"port":4,"volume_ml":30}]}'[0m
+[0;32mI (301611) MAIN: Parsed status=1[0m
+[0;32mI (301611) MAIN: Recipe item: port=0, volume_ml=30[0m
+[0;32mI (303501) MAIN: Recipe item: port=1, volume_ml=30[0m
+[0;32mI (305381) MAIN: Recipe item: port=2, volume_ml=30[0m
+[0;32mI (307261) MAIN: Recipe item: port=3, volume_ml=30[0m
+[0;32mI (309141) MAIN: Recipe item: port=4, volume_ml=30[0m

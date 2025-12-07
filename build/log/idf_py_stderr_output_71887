@@ -1,0 +1,49 @@
+[0;33m--- esp-idf-monitor 1.8.0 on /dev/cu.usbmodem2101 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40048d46: [0;33muart_rx_one_char[0m[0m in [0;32mROM[0m
+[0m--- 0x40375c3a: [0;33mpanic_abort[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m463[0m
+[0m--- 0x4037d79d: [0;33mesp_system_abort[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m92[0m
+[0m--- 0x40385c69: [0;33m__assert_func[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/newlib/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x40383678: [0;33mblock_next[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m94[0m
+[0m--- (inlined by) [0;33mblock_link_next[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m101[0m
+[0m--- (inlined by) [0;33mblock_mark_as_free[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m109[0m
+[0m--- (inlined by) [0;33mtlsf_free[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/tlsf/tlsf.c[0m[0m:[1;31m1202[0m
+[0m--- 0x403834dc: [0;33mmulti_heap_free_impl[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/multi_heap.c[0m[0m:[1;31m235[0m
+[0m--- 0x40376556: [0;33mheap_caps_free[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/heap_caps_base.c[0m[0m:[1;31m70[0m
+[0m--- 0x40385c99: [0;33mfree[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/newlib/heap.c[0m[0m:[1;31m39[0m
+[0m--- 0x4200aa27: [0;33mcall_mix_endpoint[0m[0m at [0;32m/Users/leohu/ECE-COMPSCI-655/pour/main/http_client.c[0m[0m:[1;31m151[0m
+[0m--- 0x4200a560: [0;33mapp_main[0m[0m at [0;32m/Users/leohu/ECE-COMPSCI-655/pour/main/pour.c[0m[0m:[1;31m35[0m
+[0m--- 0x4209feaf: [0;33mmain_task[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037e2e9: [0;33mvPortTaskWrapper[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x40375b74: [0;33mesp_restart_noos[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m158[0m
+[0m--- 0x40375c3a: [0;33mpanic_abort[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m463[0m
+[0m--- 0x4037d79d: [0;33mesp_system_abort[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m92[0m
+[0m--- 0x40385c69: [0;33m__assert_func[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/newlib/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x40383678: [0;33mblock_next[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m94[0m
+[0m--- (inlined by) [0;33mblock_link_next[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m101[0m
+[0m--- (inlined by) [0;33mblock_mark_as_free[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m109[0m
+[0m--- (inlined by) [0;33mtlsf_free[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/tlsf/tlsf.c[0m[0m:[1;31m1202[0m
+[0m--- 0x403834dc: [0;33mmulti_heap_free_impl[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/multi_heap.c[0m[0m:[1;31m235[0m
+[0m--- 0x40376556: [0;33mheap_caps_free[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/heap_caps_base.c[0m[0m:[1;31m70[0m
+[0m--- 0x40385c99: [0;33mfree[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/newlib/heap.c[0m[0m:[1;31m39[0m
+[0m--- 0x4200aa27: [0;33mcall_mix_endpoint[0m[0m at [0;32m/Users/leohu/ECE-COMPSCI-655/pour/main/http_client.c[0m[0m:[1;31m151[0m
+[0m--- 0x4200a560: [0;33mapp_main[0m[0m at [0;32m/Users/leohu/ECE-COMPSCI-655/pour/main/pour.c[0m[0m:[1;31m35[0m
+[0m--- 0x4209feaf: [0;33mmain_task[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037e2e9: [0;33mvPortTaskWrapper[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x40375b74: [0;33mesp_restart_noos[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m158[0m
+[0m--- 0x40375c3a: [0;33mpanic_abort[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m463[0m
+[0m--- 0x4037d79d: [0;33mesp_system_abort[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m92[0m
+[0m--- 0x40385c69: [0;33m__assert_func[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/newlib/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x40383678: [0;33mblock_next[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m94[0m
+[0m--- (inlined by) [0;33mblock_link_next[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m101[0m
+[0m--- (inlined by) [0;33mblock_mark_as_free[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m109[0m
+[0m--- (inlined by) [0;33mtlsf_free[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/tlsf/tlsf.c[0m[0m:[1;31m1202[0m
+[0m--- 0x403834dc: [0;33mmulti_heap_free_impl[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/multi_heap.c[0m[0m:[1;31m235[0m
+[0m--- 0x40376556: [0;33mheap_caps_free[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/heap/heap_caps_base.c[0m[0m:[1;31m70[0m
+[0m--- 0x40385c99: [0;33mfree[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/newlib/heap.c[0m[0m:[1;31m39[0m
+[0m--- 0x4200aa27: [0;33mcall_mix_endpoint[0m[0m at [0;32m/Users/leohu/ECE-COMPSCI-655/pour/main/http_client.c[0m[0m:[1;31m151[0m
+[0m--- 0x4200a560: [0;33mapp_main[0m[0m at [0;32m/Users/leohu/ECE-COMPSCI-655/pour/main/pour.c[0m[0m:[1;31m35[0m
+[0m--- 0x4209feaf: [0;33mmain_task[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037e2e9: [0;33mvPortTaskWrapper[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x40375b74: [0;33mesp_restart_noos[0m[0m at [0;32m/Users/leohu/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m158[0m
+[0m
